@@ -1,0 +1,84 @@
+﻿<div class="col s12">
+    <div>
+        <a href="#/main"></a>
+    </div>
+    <nav>
+        <a href="#/main" style="margin-left:20px; font-size:40px;">
+            <i class="mdi-action-reorder"></i>
+        </a>
+    </nav>
+</div>
+<div class="row" style="margin-top:20px;">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="text" class="validate" ng-model="name" ng-text-change="save()">
+                <label for="name">Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="text" class="validate" ng-model="provider" ng-text-change="save()">
+                <label for="name">Service Provider</label>
+            </div>
+        </div>
+        <div class="input-field col s12">
+            <select ng-model="delivery" ng-selected="save()">
+                <option value="0" disabled selected >Delivered Type</option>
+                <option value="1">Bottle</option>
+                <option value="2">Packet</option>
+                <option value="3">Loose</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="number" min="0" step="0.01" class="validate" ng-model="regular" ng-text-change="save()">
+                <label for="name">Regular Consumption</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="number" min="0" step="0.01" class="validate" ng-model="rate" ng-text-change="save()">
+                <label for="name">Rate</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select ng-model="currency" ng-selected="save()">
+                    <option value="" disabled selected>Currency</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="BRL">Brazilian Real </option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CZK">Czech Koruna</option>
+                    <option value="DKK">Danish Krone</option>
+                    <option value="EUR">Euro</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="HUF">Hungarian Forint </option>
+                    <option value="ILS">Israeli New Sheqel</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="MYR">Malaysian Ringgit</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="NOK">Norwegian Krone</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="PHP">Philippine Peso</option>
+                    <option value="PLN">Polish Zloty</option>
+                    <option value="GBP">Pound Sterling</option>
+                    <option value="SGD">Singapore Dollar</option>
+                    <option value="SEK">Swedish Krona</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="TWD">Taiwan New Dollar</option>
+                    <option value="THB">Thai Baht</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="USD">U.S. Dollar</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>

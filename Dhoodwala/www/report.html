@@ -1,0 +1,62 @@
+﻿<div class="col s12">
+    <nav>
+        <a href="#/main" style="margin-left:20px; font-size:40px;">
+            <i class="mdi-action-reorder"></i>
+        </a>
+    </nav>
+    
+</div>
+<div class="row" style="margin-top:20px;" ng-swipe-left="swipeleft()" ng-swipe-right="swiperight()">
+    <div class="col s12 center">
+        <h4>
+            {{showMonth}}
+        </h4>
+    </div>
+    <hr />
+    <br />
+    <div>
+        <div class="row">
+            <div class="col s4">
+                <strong>Date</strong>
+            </div>
+            <div class="col s4 right">
+                <strong>Total</strong>
+            </div>
+            <div class="col s4 right">
+                <strong>Consumption</strong>
+            </div>
+        </div>
+        <hr />
+        <div class="row" ng-repeat="d in data">
+            <div class="col s4">
+                <span>{{d.date}}</span>
+            </div>
+            <div class="col s4 right">
+                <span>{{d.total}}</span>
+            </div>
+            <div class="col s4 right">
+                <span>{{d.consumption}} Ltr.</span>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col s4">
+                <strong>Total</strong>
+            </div>
+           
+            <div class="col s4 right">
+                <span>{{currency}} {{totalamount}}</span>
+            </div>
+            <div class="col s4 right">
+                <span>{{totalconsumption}} Ltr.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+</script>

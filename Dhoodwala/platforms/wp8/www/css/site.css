@@ -1,0 +1,82 @@
+﻿html {
+    font-size: 14px;
+    font-family: 'Roboto', 'Segoe UI';
+}
+
+body {
+    background-color: #01579b;
+}
+
+a {
+    color: #9e9e9e;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.header-row {
+    height: 10px;
+}
+
+.topHeader-left {
+    background-color: #cddc39;
+    height: 100%;
+}
+
+.topHeader-right {
+    background-color: #506174;
+    height: 100%;
+}
+
+.login-section {
+    position: fixed;
+    top: 52vh;
+    width: 100%;
+}
+
+.login-circle {
+    width: 200px;
+    height: 200px;
+    margin-top: 5vh;
+    padding-top:70px;
+}
+
+.add-circle {
+    width: 50px;
+    height: 50px;
+    font-size:8rem;
+    padding-top:5%;
+}
+
+.remove-circle {
+    width: 50px;
+    height: 50px;
+    font-size:3rem;
+    padding-top:5%;
+    background-color:#EE6E73;
+}
+
+.datestamp{
+    font-size:5rem;
+    color:white;
+    text-align:center;
+}
+
+.menuitems{
+    position:fixed;
+    top: 12vh;
+    left: 10px;
+}
+
+.login-circle strong {
+    color:#757575;
+    font-size: 4rem;
+}
+
+.login-circle span {
+    color:#757575;
+    font-size: 1.5rem;
+}
+
+.login-check {
+    padding-top: 60px;
+}

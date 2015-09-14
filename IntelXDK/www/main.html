@@ -1,0 +1,84 @@
+﻿<div ng-swipe-left="swipeleft()" ng-swipe-right="swiperight()">
+    <div class="row">
+        <div class="col s12 center">
+            <input type="date" class="datepicker datestamp" ng-model="trandateFormat" ng-change="loadData()">
+        </div>
+    </div>
+    <div style="width:100%;" class="center">
+        <div class="btn-floating white waves-effect waves-light login-circle" ng-click="loadEditModal();">
+            <strong>{{quantity}}</strong><br />
+            <span>lts.</span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col s6 center">
+            <div class="btn-floating waves-effect waves-light remove-circle" ng-click="emptyMilk()">
+                <i class="mdi-action-delete"></i>
+            </div>
+        </div>
+        <div class="col s6 center">
+            <div class="btn-floating waves-effect waves-light add-circle" ng-click="addRegularMilk()">
+                <i class="mdi-action-done"></i>
+            </div>
+        </div>
+    </div>
+    <div class="menuitems">
+        <a href="#/settings" class="btn-floating waves-effect waves-light">
+            <i class="mdi-action-settings"></i>
+        </a>
+        <br />
+        <br />
+        <a href="#/report" class="btn-floating waves-effect waves-light">
+            <i class="mdi-av-equalizer"></i>
+        </a>
+        <br />
+        <br />
+        <div class="btn-floating waves-effect waves-light">
+            <i class="mdi-communication-forum"></i>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <div class="row">
+        <div class="col s6">
+            <strong class="expenses">Day: </strong>
+        </div>
+        <div class="col s6">
+            <span class="expenses">{{currency}} {{dayTotal}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <strong class="expenses">Week:</strong>
+        </div>
+        <div class="col s6">
+            <span class="expenses">{{currency}} {{weekTotal}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <strong class="expenses">Month:</strong>
+        </div>
+        <div class="col s6">
+            <span class="expenses">{{currency}} {{monthTotal}}</span>
+        </div>
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <input id="name" type="text" class="validate" ng-model="newquantity" style="color:black; font-size:26px;">
+        </div>
+        <div class="modal-footer">
+            <button class=" modal-action modal-close waves-effect waves-green btn-flat" ng-click="save()">Save</button>
+            <button class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</button>
+        </div>
+    </div>
+   
+</div>
+
+<script>
+    var picker = $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 5 // Creates a dropdown of 15 years to control year
+    });
+</script>

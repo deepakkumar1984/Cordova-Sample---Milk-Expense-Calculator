@@ -1,0 +1,123 @@
+﻿html {
+    font-size: 14px;
+    font-family: 'Roboto', 'Segoe UI';
+    color:white;
+}
+
+body {
+    background-color: #01579b;
+}
+
+a {
+    color: #9e9e9e;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+.header-row {
+    height: 10px;
+}
+
+.topHeader-left {
+    background-color: #cddc39;
+    height: 100%;
+}
+
+.topHeader-right {
+    background-color: #506174;
+    height: 100%;
+}
+
+.login-section {
+    position: fixed;
+    top: 52vh;
+    width: 100%;
+}
+
+.login-circle {
+    width: 25vh;
+    height: 25vh;
+    padding-top:8vh;
+}
+
+.add-circle {
+    width: 10vh;
+    height: 10vh;
+}
+
+.add-circle i {
+    font-size:6vh;
+    padding-top:2.5vh;
+}
+
+.remove-circle {
+    width: 10vh;
+    height: 10vh;
+    background-color:#EE6E73;
+}
+
+.remove-circle i {
+    font-size:6vh;
+    padding-top:2.5vh;
+}
+
+.datestamp{
+    font-size:5rem;
+    color:white;
+    text-align:center;
+}
+
+.menuitems{
+    position:fixed;
+    top: 12vh;
+    left: 10px;
+}
+
+.login-circle strong {
+    color:#757575;
+    font-size: 6vh;
+}
+
+.login-circle span {
+    color:#757575;
+    font-size: 3vh;
+}
+
+.login-check {
+    padding-top: 60px;
+}
+
+.expenses{
+    font-size:3vh;
+}
+
+
+.slidetop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .slidetop.ng-enter,
+    .slidetop.ng-leave {
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .slidetop.ng-enter {
+        top: 100%;
+    }
+
+    .slidetop.ng-enter-active {
+        top: 0;
+    }
+
+    .slidetop.ng-leave {
+        top: 0;
+    }
+
+    .slidetop.ng-leave-active {
+        top: -100%;
+    }
